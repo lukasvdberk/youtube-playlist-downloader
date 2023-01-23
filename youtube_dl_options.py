@@ -27,5 +27,6 @@ def get_youtube_dl_download_options(storage_location):
         'quiet': True,
         'restrictfilenames': True,
         'outtmpl': storage_location + '/%(title)s.%(ext)s',
+        'ignoreerrors': True,
         'prefer_ffmpeg': True,
     }
