@@ -2,10 +2,13 @@ version: "3"
 services:
   # TODO use image instead of building
   playlist_downloader:
-    container_name: playlist_downloader
+    container_name: youtube_playlist_downloader
+    image: lukasberk/youtube_playlist_downloader:latest
     build: .
+    volumes:
+      - './music:/music'
     environment:
-      - YOUTUBE_PLAYLIST_TO_DOWNLOAD="https://www.youtube.com/playlist?list=PLzq-VeHKRqxt28SGskHpKlO10BBGdf2np"
+      - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxt28SGskHpKlO10BBGdf2np"
 
 
 
