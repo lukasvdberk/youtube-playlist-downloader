@@ -1,8 +1,5 @@
-TODO
-
-[ ] Docs 
-[ ] Error handling (folder shizzle)
-[ ] Fix todos
+# Youtube Playlist Downloader
+This is a simple script that downloads all the songs from a youtube playlist and converts them to mp3 files.
 
 # Running
 Use the docker-compose file to get up and running quickly
