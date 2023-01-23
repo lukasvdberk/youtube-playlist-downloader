@@ -29,7 +29,6 @@ def get_storage_location_from_env():
     return DEFAULT_STORAGE_LOCATION
 
 
-# TODO docs
 def download_youtube_playlist(playlist_url, config):
     """
     Download a playlist from YouTube
