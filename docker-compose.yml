@@ -9,6 +9,3 @@ services:
       - './music:/music'
     environment:
       - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxt28SGskHpKlO10BBGdf2np"
-
-
-
