@@ -1,4 +1,4 @@
-import youtube_dl
+from yt_dlp import YoutubeDL
 import os
 from youtube_dl_options import get_youtube_dl_download_options
 
@@ -37,7 +37,7 @@ def download_youtube_playlist(playlist_url, config):
     (use get_youtube_dl_download_options function to get default configuration)
     :return: None
     """
-    with youtube_dl.YoutubeDL(config) as ydl:
+    with YoutubeDL(config) as ydl:
         try:
             ydl.download([playlist_url])
         except Exception as e:
