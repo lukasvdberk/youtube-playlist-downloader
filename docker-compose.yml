@@ -1,6 +1,5 @@
 version: "3"
 services:
-  # TODO use image instead of building
   playlist_downloader:
     container_name: youtube_playlist_downloader
     image: lukasberk/youtube_playlist_downloader:latest
@@ -8,5 +7,5 @@ services:
     volumes:
       - './music:/music'
     environment:
-      - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxt28SGskHpKlO10BBGdf2np"
+      - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxunJwAyRZdG51QgLjJUbKDG"
       - STORAGE_LOCATION="/music/"
