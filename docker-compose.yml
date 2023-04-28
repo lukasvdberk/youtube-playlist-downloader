@@ -7,5 +7,5 @@ services:
     volumes:
       - './music:/music'
     environment:
-      - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxunJwAyRZdG51QgLjJUbKDG"
+      - YOUTUBE_PLAYLIST="https://www.youtube.com/playlist?list=PLzq-VeHKRqxsL7dGmuwx_WLgUCJjY9aje"
       - STORAGE_LOCATION="/music/"
